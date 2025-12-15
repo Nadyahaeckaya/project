@@ -1,0 +1,28 @@
+name{
+	display: block;
+	color: #3300CC;
+	font-size: 20px;
+	
+}
+countrys {
+  display: block;
+  justify-content: center; 
+  align-items: center;     
+  background-color: #e0e0ff; 
+}
+
+country {
+  display: block;
+  width: 400px;
+  padding: 20px;
+  background-color: #9999FF; 
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+people {
+	display: block;
+	color: #336699;
+	font-size: 20px;
+	text-align: left;
+}
