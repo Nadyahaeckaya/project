@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>форма</title>
+	<link rel="stylesheet" href="lab8.3f.css">
+</head>
+<body>
+	<form>
+    <table>
+    	<tr><td align="center">регистрация постоянного клиента</td></tr>
+    	<tr>
+    		<td><label for="lastname">фамилия</label></td> <!--добавляет текстовую метку для элемента <input>-->
+    		<td><input type="text" name="lastname"></td>
+    	</tr>
+    	<tr>
+    		<td><label for="name">имя</label></td>
+    		<td><input type="text" name="name"></td> <!--type="text" -текстовое поле-->
+    	</tr>
+    	<tr>
+    		<td><label for="patronymic">отчество</label></td>
+    		<td><input type="text" name="patronymic"></td> <!--type="text" -текстовое поле-->
+    	</tr>
+    
+		<tr>
+    		<td><label for="age">ваш возраст</label></td>
+    		<td><input type="text" name="age"></td> <!--type="text" -текстовое поле-->
+    	</tr>
+		<tr>
+			<td><label for="pol">ваш пол</label></td>
+			<td><input type="radio" name="radio"><label>мужской</label></td>
+			<td><input type="radio" name="radio"></td> 
+         <td><label>женский</label></tr></td>
+        </tr>
+    	<td><label for="email">email</label></td>
+    	<td><textarea></textarea></td> <!--Создает большие поля для ввода текста-->
+    	<tr>
+    		<td><label for="country">страна проживания</label></td>
+    		<td><input type="text" name="country"></td> <!--type="text" -текстовое поле-->
+    	</tr>
+		<tr>
+			<td><label for="day">откуда вы узнали о нас ?<label></td>
+			<td>
+				<select>
+				<option>выберете вариант</option>
+				<option>сот.сети</option> 
+				<option>рассказала подруга</option>
+				<option>видела вашу рекламу</option>
+			</select>
+		</td>
+		</tr>
+		<tr>
+			<td><label for="date"> дата заполнения</label></td>
+			<td><input type="date" name="date"></td>
+		</tr>	
+   
+	
+ <tr>
+ 	<td><button type=submit>Отправить данные</button>
+<button type=submit>отмена </button> </td>
+</tr>
+   </tabel>
+</form>
+</body>
+</html>

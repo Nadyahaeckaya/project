@@ -1,0 +1,63 @@
+.container1 {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  border: 2px solid #444;
+  padding: 10px;
+}
+
+.first_rows {
+  text-align: center;
+  height: 25px;
+  margin-bottom: 15px;
+  border: 1px solid #888;
+}
+
+.second_rows {
+  display: flex;
+  justify-content: space-between; /* равномерно распределить ячейки */
+  gap: 10px;                      /* отступы между ячейками */
+}
+
+.zaglittel {
+  flex: 1;                        /* все ячейки равной ширины */
+  border: 1px solid #888;
+  padding: 10px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+/*задание2*/
+.nav2 {
+     width: 600px;
+  margin: 20px auto;
+    
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #ccc;
+  padding: 10px;
+  flex-wrap: wrap; /* позволяет переносить строки */
+}
+
+.nav2 a {
+  text-decoration: none; /*убираем подчёркивание*/
+  color: black;
+  padding: 10px 20px;
+  background-color: #eee;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+/* Адаптация для узких экранов */
+@media (max-width: 560px) {
+  .nav2 {
+    flex-direction: column; /* элементы идут вертикально */
+    align-items: center;
+  }
+
+  .nav2 a {
+    width: 80%;
+    text-align: center;
+  }
+}
+

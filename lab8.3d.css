@@ -1,0 +1,29 @@
+table {
+      border: 5px solid red; /* Красная обводка */
+      border-collapse: collapse;/*убирает двойные границы между ячейками.*/
+      margin: 20px ;/*внешний отступ от элемента*/
+    }
+
+    td {
+      width: 60px;
+      height: 60px;
+      padding: 0;/*от граници до содержимого*/
+    }
+
+    /* Четные строки */
+    tr:nth-child(even) td:nth-child(odd) {/*even-чётные odd-нечёт*/
+      background-color: black;
+    }
+
+    tr:nth-child(even) td:nth-child(even) {
+      background-color: white;
+    }
+
+    /* Нечетные строки */
+    tr:nth-child(odd) td:nth-child(odd) {
+      background-color: white;
+    }
+
+    tr:nth-child(odd) td:nth-child(even) {
+      background-color: black;
+    }

@@ -1,0 +1,152 @@
+/*Flexbox — это CSS‑модуль для создания гибких и адаптивных макетов, 
+который управляет расположением элементов 
+вдоль одной оси (строка или колонка).*/
+
+.menu-block {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-position: inside;/*маркер списка отображается внутри блока <li>, 
+     перенос текста идёт под маркером без дополнительного отступа */
+  padding: 0;
+  margin: 10px 0;
+}
+
+.menu-list li {
+  list-style: none;/*полностью убирает маркеры у списка */
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 16px;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+
+@media (max-width: 560px) {
+  .menu-list {
+    flex-direction: column; /* элементы идут вертикально */
+    align-items: center;
+  }
+
+  .menu-list a {
+    width: 80%;
+    text-align: center;
+  }
+}
+.videoo {
+  width: 400px;
+  display: flex;
+  padding-left: 20px;
+  gap: 25px;
+  
+}
+.audioo {
+ width: 400px;              
+  display: flex; 
+  justify-content: center;   
+  align-items: center;       
+  margin: 20px auto;
+  gap: 100px;    
+}
+@media (max-width: 560px) {
+  .menu-list {
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .videoo, .audioo {
+    flex-direction: column;
+    align-items: center;
+  width: 100%;
+  }
+
+.gallery {
+  display: flex;
+  justify-content: center;   /* центрируем ряд */
+  gap: 20px;                 /* расстояние между картинками */
+  flex-wrap: wrap;           /* перенос при узком экране */
+  padding: 20px;
+}
+
+.gallery figure {
+  width: 180px;              /* уменьшаем ширину блока */
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+
+.gallery img {
+  width: 120px;              /* компактная ширина */
+  height: 90px;              /* пропорциональная высота */
+  border-radius: 8px;
+}
+
+.gallery figcaption {
+  font-size: 16px;
+  margin-top: 8px;
+  color: #333;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;   /* центрируем ряд */
+  gap: 20px;                 /* расстояние между картинками */
+  flex-wrap: wrap;           /* перенос при узком экране */
+  padding: 20px;
+}
+
+.gallery figure {
+  flex: 0 1 180px;           /* базовая ширина карточки */
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+
+.gallery img {
+  width: 100%;               /* картинка занимает всю ширину figure */
+  height: auto;              /* сохраняем пропорции */
+  border-radius: 8px;
+}
+
+/* Маленькие телефоны (до 480px) */
+@media (max-width: 480px) {
+  .gallery figure {
+    flex-grow: 0;      /* не растягивается */
+    flex-shrink: 1;    /* может сжиматься */
+    flex-basis: 100%;  /* занимает всю ширину */
+  }
+  .gallery img {
+    width: 90%;        /* чуть меньше ширины блока */
+  }
+}
+
+/* Телефоны и маленькие планшеты (до 768px) */
+@media (max-width: 768px) {
+  .gallery figure {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 45%;   
+  }
+}
+
+/* Ноутбуки (до 1280px) */
+@media (max-width: 1280px) {
+  .gallery figure {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 30%;   
+  }
+}
