@@ -1,0 +1,22 @@
+<!-- XML -расширяемый язык разметки,  
+созданный для хранения, транспортировки  данных-->
+<?xml version="1.0" encoding="UTF8"?>
+<?xml-stylesheet type='text/css' href='style.css'?>
+<countrys>
+<country> 
+	<name> Индия</name>
+	<people>1463865525 человек</people>
+</country>
+<country>
+	<name> Китай</name>
+	<people>1416096094 человек</people>
+</country>
+<country>
+	<name> США</name>
+	<people>347275807 человек</people>
+</country>
+<country>
+	<name>Россия </name>
+	<people>144429000 человек</people>
+</country>
+</countrys>
